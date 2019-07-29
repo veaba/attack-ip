@@ -51,6 +51,21 @@ docker logs -f containerId | grep from   >> mongo.log
 
 测试版Python代码，todo，后续增加多维度统计。2019年7月29日10:54:56
 
+**封装版python3.0脚本解析mongo日志释出**
+见[mongo-log-parser.py](attack-mongo/python/mongo-log-parser.py)
+
+```shell
+
+# 解析ip.yml 和port.yml 文件
+python mongo-log-parser.py mongo.log  
+
+# 如果带参数`-all` 则全部解析出来，不去重
+python mongo-log-parser.py mongo.log  --all
+
+```
+
+**单机版python脚本解析mongo日志释出：**
+
 ```python
 import re
 ip_list=[] #ip list
