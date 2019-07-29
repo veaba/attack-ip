@@ -38,7 +38,8 @@
 
 docker logs -f containerId | grep from   >> mongo.log 
 
-将文件导入到https://datav.io/tools/mognodb  即可列出手工具的数据
+
+将文件导入到https://datav.ai/tools/mognodb  (TODO 尚未开搞)即可列出手工具的数据
 
 >【注】： 该工具只会文本的正则方式解析被的ip名单，不会记录用户的任何信息。
 
